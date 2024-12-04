@@ -12,7 +12,7 @@ signIn_Btn.addEventListener("click", async  () => {
   let Password = SignIn_Password.value;
 
   console.log(Email, Password);
-  
+
   if (!navigator.onLine) {
     Swal.fire({
       icon: 'error',
@@ -38,8 +38,7 @@ signIn_Btn.addEventListener("click", async  () => {
     });
 
    
-    //location.href = "/kanban.html"; 
-  } catch (error) {
+    location.href = '../post application add Data/addData.html';  } catch (error) {
     const errorCode = error.code;
 
     // Show SweetAlert based on the error

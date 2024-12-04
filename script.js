@@ -65,7 +65,7 @@ signUp_Btn.addEventListener('click', (e) => {
         text: 'Your account has been created successfully!',
         confirmButtonText: 'OK', 
       }).then(() => {
-        location.href = './SignIn/signin.html';
+        location.href = '../post application add Data/addData.html';
        });
 
       signUp_Email.value = "";
