@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Application</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center">
+
+  <header class="bg-blue-500 w-full text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <!-- Text -->
+      <h1 class="text-2xl font-bold">Post Application</h1>
+      <!-- Button -->
+      <button class="bg-white text-blue-500 px-4 py-2 rounded hover:bg-gray-200"><a href="/index.html">Log In</a></button>
+    </div>
+  </header>
+
+  <!-- User Form -->
+  <div class="w-1/2 mt-10 p-6 bg-white rounded shadow">
+    <h2 class="text-xl font-bold mb-4">Add Post</h2>
+    <form id="postForm" class="space-y-4">
+      <input id="username" type="text" placeholder="Enter your name" class="w-full p-2 border rounded" required>
+      <textarea id="postContent" placeholder="Write your post..." class="w-full p-2 border rounded" required></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Submit</button>
+    </form>
+  </div>
+
+  <!-- Firebase -->
+  <script type="module" src="/firebase/firebase.js"></script>
+     <!-- ... Sweet Alert ... -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- javascript -->
+  <script type="module" src="./addData.js"></script>
+</body>
+</html>

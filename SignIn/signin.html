@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In || </title>
+</head>
+  <body class="bg-gradient-to-r from-blue-50 to-gray-100 flex items-center justify-center min-h-screen">
+
+    <div id="container" class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg sm:max-w-md xs:max-w-sm transition-all sm:p-6 xs:p-4">
+      <!-- Heading -->
+      <h2 id="title" class="text-3xl md:text-2xl sm:text-xl font-bold text-center text-blue-600 mb-6">Sign In</h2>
+  
+      <!-- Sign In Form -->
+      <form>
+        <!-- Email Input -->
+        <label for="signInEmail" class="block mb-4">
+          <span class="block text-sm font-semibold text-gray-700">Email:</span>
+          <input type="email" id="signInEmail"  placeholder="Enter your Email Address..." required class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </label>
+  
+        <!-- Password Input -->
+        <label for="signInPassword" class="block mb-6">
+          <span class="block text-sm font-semibold text-gray-700">Password:</span>
+          <input type="password" id="signInPassword" placeholder="******"  required class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </label>
+  
+        <!-- Sign In Button -->
+        <button type="button" id="signInButton" class="w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-2 px-4 rounded-lg font-semibold hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-transform transform hover:scale-105"> Sign In <button>
+      </form>
+  
+      <!-- Footer Text -->
+      <p id="footerText" class="text-center text-sm text-gray-600 mt-6">
+        Don't have an account? 
+        <a href="/index.html" id="signInLink" class="text-blue-500 hover:underline font-semibold">Sign Up</a>
+      </p>
+    </div>
+  
+    <style>
+      @media (max-width: 650px) {
+        #container {
+          padding: 16px;
+          max-width: 90%;
+        }
+      }
+  
+      @media (max-width: 400px) {
+        #container {
+          padding: 12px;
+          max-width: 95%;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  
+  <!-- Tailwind Link -->
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <!-- firebase link -->
+  <script type="module" src="/firebase/firebase.js"></script>
+   <!-- ... Sweet Alert ... -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="module" src="./signIn.js"></script>
+  </body>
+</html>
